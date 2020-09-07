@@ -1,0 +1,178 @@
+body{
+    margin:0;
+    padding: 0;
+}
+
+.mycanvas {
+    background-color: crimson;
+    height: 510px;
+    width: 350px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+}
+
+
+
+.mug {
+    background-color: seashell;
+    height: 90px;
+    width: 90px;
+    position: relative;
+    top: 210px;
+    left: 125px;
+    border-radius: 5px 5px 5px 5px;
+
+
+
+}
+
+
+.tip {
+    background-color: seashell;
+    height: 25px;
+    width: 90px;
+    position: relative;
+    border-radius: 50%;
+    bottom: 10px;
+
+    
+}
+
+.coffee {
+
+    background-color: rgb(65, 43, 2);
+    height: 20px;
+    width: 80px;
+    position: relative;
+    border-radius: 50%;
+    bottom: 30px;
+    left: 5px;
+
+}
+
+.base {
+
+    background-color: seashell;
+    height: 25px;
+    width: 90px;
+    position: relative;
+    border-radius: 50%;
+    top: 30px;
+
+
+}
+
+.handle {
+
+    background-color: seashell;
+    width: 40px;
+    height: 60px;
+    position: relative;
+    border-radius: 0 15px 15px 0;
+    bottom: 50px;
+    left: 80px;
+}
+
+.handlehole {
+
+    background-color: crimson;
+    width: 20px;
+    height: 40px;
+    position: absolute;
+    border-radius: 0 7px 7px 0;
+    top: 10px;
+    left: 10px;
+
+   
+
+}
+
+#wrap {
+
+    position: absolute;
+    top: 15%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+}
+
+#steam {
+
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    margin-left: 75px;
+    margin-top: 60px;
+    z-index: 0;
+    opacity: 0;
+
+
+
+}
+
+.steam-one {
+
+    animation: steam-one 2s ease-out infinite;
+
+}
+
+.steam-three {
+
+    animation: steam-one 2s ease-out 1s infinite;
+
+}
+
+@keyframes steam-one {
+    0% {
+        transform: translateY(0) translateX(0) scale(0.25);
+        opacity: 0.25;
+    }
+
+    100% {
+        transform: translateY(-200px) translateX(-20px) scale(1);
+        opacity: 0;
+    }
+}
+
+.steam-two {
+
+    animation: steam-two 2s ease-out 0.5s infinite;
+
+}
+
+.steam-four {
+
+    animation: steam-two 2s ease-out 1.5s infinite;
+
+}
+
+@keyframes steam-two {
+    0% {
+        transform: translateY(0) translateX(0) scale(0.25);
+        opacity: 0.25;
+    }
+
+    100% {
+        transform: translateY(-200px) translateX(-20px) scale(1);
+        opacity: 0;
+    }
+}
+
+.text {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 350px;
+    left: 110px;
+    
+}
